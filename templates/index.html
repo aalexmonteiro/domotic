@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>DOMOTIC HOME</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap toogle CSS -->
+    <link href="../static/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../static/css/domotic.css" rel="stylesheet">
+
+    <!-- jQuery library -->
+    <script src="../static/js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap toogle library -->
+    <script src="../static/js/bootstrap-toggle.min.js"></script>
+    <!-- Custom library -->
+    <script src="../static/js/domotic.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar flex-md-nowrap shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">DOMOTIC HOME</a>
+      <div class="col-md-4">
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="radio-socket" name="radio-socket" class="custom-control-input">
+          <label class="custom-control-label white" for="radio-socket">SOCKET</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="radio-mqtt" name="radio-mqtt" class="custom-control-input">
+          <label class="custom-control-label white" for="radio-mqtt">MQTT</label>
+        </div>
+      </div>
+    </nav>
+
+    <div>
+        <main role="main" class="col-md-12" id="dashboard">
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card shadow">
+                  <div class="card-body">
+                    <h5 class="card-title">Bedroom</h5>
+                    <ul class="list-group">
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Air-conditioner
+                        <label>
+                          <input id='air-status' for='air-status' type="checkbox" data-toggle="toggle" data-onstyle="primary" data-offstyle="danger">
+                        </label>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Temperature
+                        <span id='air-value' class="badge badge-primary badge-pill">20</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card shadow">
+                  <div class="card-body">
+                    <h5 class="card-title">Kitchen</h5>
+                    <ul class="list-group">
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Light
+                        <label>
+                          <input id='light-status' type="checkbox" data-toggle="toggle" data-onstyle="primary" data-offstyle="danger">
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card shadow">
+                  <div class="card-body">
+                    <h5 class="card-title">Living Room</h5>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      TV - Status
+                      <label>
+                        <input id='tv-status' type="checkbox" data-toggle="toggle" data-onstyle="primary" data-offstyle="danger">
+                      </label>
+                    </li>
+                    <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Channel
+                      <span id='channel' class="badge badge-primary badge-pill">1</span>
+                    </li> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card shadow">
+                  <div class="card-body">
+                    <h5 class="card-title">Audio System</h5>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Status
+                      <label>
+                        <input id='audio-status' type="checkbox" data-toggle="toggle" data-onstyle="primary" data-offstyle="danger">
+                      </label>
+                    </li>
+                    <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Song
+                      <span id='song' class="badge badge-primary badge-pill">1</span>
+                    </li> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </main>
+
+
+
+    </div>
+
+    <!-- Bootstoogle core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+  </body>
+</html>
